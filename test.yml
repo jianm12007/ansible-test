@@ -10,5 +10,4 @@
       register: output
 
     - name: output
-      debug: 
-        msg: {{output}}
+      debug: var=output
