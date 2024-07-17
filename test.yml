@@ -9,3 +9,6 @@
         commands: show version
       register: output
 
+    - name: output
+      debug: 
+        msg: {{output}}
