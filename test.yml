@@ -2,7 +2,6 @@
 - name: show version test
   hosts: all
   gather_facts: false
-  ansible_network_os: cisco.ios.ios
   connection: ansible.netcommon.network_cli
   ansible_user: netadmin
   ansible_password: C1sco@123
