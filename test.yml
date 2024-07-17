@@ -1,5 +1,10 @@
 ---
-- name: Write Erase all the configuration on devices
-  cisco.ios.ios_command:
-    commands: show version
+- hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: show version
+      cisco.ios.ios_command:
+        commands: show version
+      register: output
 
