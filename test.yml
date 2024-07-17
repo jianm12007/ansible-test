@@ -3,12 +3,6 @@
   hosts: all
   gather_facts: false
   connection: ansible.netcommon.network_cli
-  ansible_user: netadmin
-  ansible_password: C1sco@123
-  ansible_become: yes
-  ansible_become_method: enable
-  ansible_become_password: C1sco@123
-  ansible_command_timeout: 60
 
   tasks:
     - name: show version
