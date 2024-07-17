@@ -1,5 +1,5 @@
 ---
-- name: "show version test"
+- name: show version test
   hosts: all
   gather_facts: false
   ansible_network_os: cisco.ios.ios
